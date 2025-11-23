@@ -1,0 +1,23 @@
+/* Scan blocks */
+.scan-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 20px;
+margin: 30px;
+}
+
+.scan-block {
+padding: 100px 30px;
+background: #ecf0f1;
+border: 2px solid #bdc3c7;
+border-radius: 12px;
+font-size: 2rem;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+
+.scan-block:hover {
+background: #dfe6e9;
+transform: scale(1.05);
+}

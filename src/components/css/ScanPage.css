@@ -1,0 +1,79 @@
+/* Page header */
+.page-header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between; /* left, center, right layout */
+  align-items: center;
+}
+
+.page-header h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Table */
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.scan-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.scan-table th,
+.scan-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.scan-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.scan-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Upload button */
+.btn.upload {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.btn.upload:hover {
+  background: #2980b9;
+}
+
+.left-section,
+.right-section {
+  width: 105px; 
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-section {
+  justify-content: flex-end;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  flex-grow: 1;
+}

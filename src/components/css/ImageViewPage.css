@@ -1,0 +1,161 @@
+.image-view-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr 300px;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 30px auto;
+  max-width: 1800px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Left panel (buttons) */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* Center image section */
+.center-panel {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 750px;
+  height: 750px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.scan-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps aspect ratio */
+  border-radius: 10px;
+}
+
+.annotation-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+canvas {
+  touch-action: none;
+}
+
+
+/* Right section */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.results-section {
+  background: white;
+  border-left: 5px solid #3498db;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.results-section h3 {
+  margin-bottom: 10px;
+  color: #2b7bbd;
+}
+
+/* Result entries */
+.ai-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ai-results li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.ai-results li:hover {
+  background: #f5f9ff;
+}
+
+/* Buttons */
+.btn.action {
+  background: linear-gradient(135deg, #3498db, #2b7bbd);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.action:hover {
+  background: linear-gradient(135deg, #2b7bbd, #1f5f99);
+  transform: translateY(-2px);
+}
+
+.annotation-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.annotation-controls button {
+  width: 100px;
+}
+
+.color-palette {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.annotation-remarks {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.gradcam-container {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+.gradcam-image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.gradcam-legend {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
